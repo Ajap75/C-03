@@ -65,7 +65,7 @@ void ClapTrap::takeDamage(unsigned int amount)
         return ;
     }
     std::cout << "ClapTrap " << getName() << " has suffered " << RED << amount << " points of damage" << RESET << std::endl;
-    setHit_points(0);
+    setHit_points(Hit_points);
 }
 
 /* When ClapTrack attacks, it causes its target to lose <attack damage> hit points.
