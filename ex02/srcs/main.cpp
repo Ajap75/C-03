@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 18:07:48 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 12:55:03 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/05 13:46:30 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void ClapTrapTest()
     int i;
     i = 0;
     ScavTrap BigGirl("BigGirl");
+    BigGirl.guardGate();
     BigGirl.takeDamage(9);
     while (i <= 7)
     {
