@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:38:29 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/04 18:52:09 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/05 10:57:05 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class ClapTrap
 
 
     public :
-
+    ClapTrap(); // Default Constructor
     ClapTrap(std::string Name_param); // constructor 
     ~ClapTrap(); // Destructor
     ClapTrap(const ClapTrap& other); // copy Constructor
