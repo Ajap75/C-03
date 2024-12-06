@@ -6,14 +6,15 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:59:17 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 16:58:55 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/06 11:22:04 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ClapTrap.hpp"
 
 
-ClapTrap::ClapTrap(){}// Default Constructor
+ClapTrap::ClapTrap() :
+        _Name("Unnamed"), _Hit_points(100), _Energy_points(50), _Attack_damage(20){} // Default Constructor
 
 ClapTrap::ClapTrap(std::string Name)
      :  _Name(Name), _Hit_points(100), _Energy_points(50), _Attack_damage(20) // Constructor with param
@@ -40,7 +41,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) // Assignation operator ove
         this->_Attack_damage = other._Attack_damage;
         this->_Hit_points = other._Hit_points;
         this->_Energy_points = other._Energy_points;
-        this->_Name = other._Name;
+        // Name must not be reassign as it is suppose to be immutable and assigne only once by the constructor
     }
     return *this;
 }

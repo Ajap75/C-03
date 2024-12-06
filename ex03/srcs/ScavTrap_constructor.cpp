@@ -6,13 +6,13 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:36:11 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 18:13:04 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/06 11:33:28 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ScavTrap.hpp"
 
-ScavTrap::ScavTrap() // Default Constructor
+ScavTrap::ScavTrap() : ClapTrap() // Default Constructor
 {
     this->_Hit_points = 100; // Overwrite the inherited attribute's value. Attributes inisialized by the ClapTrap Default constructor
     this->_Energy_points = 50; // same
@@ -37,6 +37,7 @@ ScavTrap::~ScavTrap() //Default Destructor
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) // copy constructor : Explicitly call ClapTrap copy constructor
 {
     std::cout << "ScavTrap Copy Constructor has been called" << std::endl;
+    // if there is any specific attributes to ScavTrap class, I have to add it 
 }; 
 
 ScavTrap& ScavTrap::operator =(const ScavTrap& other) // Assignation operator overloaded
