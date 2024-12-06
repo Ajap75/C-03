@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 17:23:46 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:20:41 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/04 18:08:08 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,30 @@
 
 std::string ClapTrap::getName() const
 {
-    return (this->_Name);
+    return (this->Name);
 }
 
 int ClapTrap::getHit_points() const
 {
-    return (this->_Hit_points);
+    return (this->Hit_points);
 }
 
 int ClapTrap::getEnergy_points() const
 {
-    return(this->_Energy_points);
+    return(this->Energy_points);
 }
 
 int ClapTrap::getAttack_Damage() const
 {
-    return (this->_Attack_damage);
+    return (this->Attack_damage);
 }
 
 void ClapTrap::setHit_points(unsigned int new_value)
 {
-    this->_Hit_points = new_value;
+    this->Hit_points = new_value;
 }
 
 void ClapTrap::setEnergy_points(unsigned int new_value)
 {
-    this->_Energy_points = new_value;
+    this->Energy_points = new_value;
 }

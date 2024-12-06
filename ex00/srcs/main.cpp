@@ -6,21 +6,20 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 18:07:48 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:09:14 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/04 19:01:25 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/FragTrap.hpp"
+#include "../headers/ClapTrap.hpp"
 
 
-void FragTrapTest()
+void ClapTrapTest()
 {
     int i;
     i = 0;
-    FragTrap BigGirl("BigGirl");
-    BigGirl.highFivesGuys();
-    BigGirl.takeDamage(99);
-    while (i <= 100)
+    ClapTrap BigGirl("BigGirl");
+    BigGirl.takeDamage(9);
+    while (i <= 7)
     {
         BigGirl.beRepaired(1);
         i++;
@@ -29,14 +28,14 @@ void FragTrapTest()
     BigGirl.attack("SmallBoy");
     BigGirl.attack("SmallBoy");
     BigGirl.takeDamage(8);
-    BigGirl.takeDamage(100);
-    BigGirl.takeDamage(10);
+    BigGirl.takeDamage(1);
+    BigGirl.takeDamage(1);
 
 }
 
 
 int main (void)
 {
-    FragTrapTest();
+    ClapTrapTest();
     return (0);
 }

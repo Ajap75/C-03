@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 17:23:26 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:20:40 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/04 19:04:19 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ void ClapTrap::beRepaired(unsigned int amount)
     {
         std::cout << "ClapTrap " << getName() << " repairs itself and gain " << GREEN << amount << " point of Hit" << RESET << std::endl;
         setEnergy_points(Energy_points);
-        if ((amount + this->_Hit_points) <= INT_MAX)
-            setHit_points(amount + this->_Hit_points);
+        if ((amount + this->Hit_points) <= INT_MAX)
+            setHit_points(amount + this->Hit_points);
         else
             setHit_points(INT_MAX);
     }

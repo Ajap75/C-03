@@ -6,18 +6,19 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 18:07:48 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/04 19:01:25 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/05 14:51:54 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/ClapTrap.hpp"
+#include "../headers/ScavTrap.hpp"
 
 
 void ClapTrapTest()
 {
     int i;
     i = 0;
-    ClapTrap BigGirl("BigGirl");
+    ScavTrap BigGirl("BigGirl");
+    BigGirl.guardGate();
     BigGirl.takeDamage(9);
     while (i <= 7)
     {
@@ -28,8 +29,8 @@ void ClapTrapTest()
     BigGirl.attack("SmallBoy");
     BigGirl.attack("SmallBoy");
     BigGirl.takeDamage(8);
-    BigGirl.takeDamage(1);
-    BigGirl.takeDamage(1);
+    BigGirl.takeDamage(100);
+    BigGirl.takeDamage(10);
 
 }
 

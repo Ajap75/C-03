@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:59:17 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 12:48:58 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/05 14:56:48 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ClapTrap::ClapTrap(){}// Default Constructor
 
 ClapTrap::ClapTrap(std::string Name)
-     :  _Name(Name), _Hit_points(100), _Energy_points(50), _Attack_damage(20) // Constructor with param
+     :  _Name(Name), _Hit_points(10), _Energy_points(10), _Attack_damage(0) // Constructor with param
 {
     std::cout << "ClapTrap Constructor has been called" << std::endl;
 } 

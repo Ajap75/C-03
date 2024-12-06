@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap_functions.cpp                             :+:      :+:    :+:   */
+/*   FragTrap_function.cpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/05 12:29:09 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 12:34:04 by antoinejour      ###   ########.fr       */
+/*   Created: 2024/12/05 14:04:08 by antoinejour       #+#    #+#             */
+/*   Updated: 2024/12/05 14:29:14 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/ScavTrap.hpp"
+#include "../headers/FragTrap.hpp"
 
-void ScavTrap::attack(const std::string& target)
+
+void FragTrap::highFivesGuys(void)
 {
-    ClapTrap::attack(target);
-    std::cout << "SCAVTRAP ATTACK SPECIFIC FUNCTION CALLED"<< std::endl;
+    std::cout << BLUE << "Hey I want to highFive with you !" << RESET << std::endl;
 }

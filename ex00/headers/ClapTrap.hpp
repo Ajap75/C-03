@@ -6,7 +6,7 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:38:29 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:44:14 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/05 10:57:05 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,17 @@
 
 class ClapTrap
 {
-    protected : // modified from prviate to protected to allow the child class to have acces to those attributes 
+    private :
     
-    std::string _Name;
-    int _Hit_points;
-    int _Energy_points;
-    int _Attack_damage;
+    std::string Name;
+    int Hit_points;
+    int Energy_points;
+    int Attack_damage;
 
 
     public :
-
     ClapTrap(); // Default Constructor
-    ClapTrap(std::string Name); // constructor 
+    ClapTrap(std::string Name_param); // constructor 
     ~ClapTrap(); // Destructor
     ClapTrap(const ClapTrap& other); // copy Constructor
     ClapTrap& operator=(const ClapTrap& other); // Assignation operator overloaded 

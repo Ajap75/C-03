@@ -6,11 +6,11 @@
 #    By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 12:53:29 by anastruc          #+#    #+#              #
-#    Updated: 2024/12/05 14:25:49 by antoinejour      ###   ########.fr        #
+#    Updated: 2024/12/04 18:31:30 by antoinejour      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = Aaaaand... OPEN!
 COMPIL = c++
 FLAGS =  -Wall -Werror -Wextra -std=c++98 -g3 -fPIC
 
@@ -18,16 +18,12 @@ PINK = \033[1;35m
 BLUE = \033[1;36m
 NC = \033[0m
 
-HEADER = headers/ClapTrap.hpp \
-		headers/FragTrap.hpp \
+HEADER = headers/ClapTrap.hpp\
 
 SRCS = ClapTrap_functions.cpp \
 		ClapTrap_getter.cpp \
 		ClapTrap_constructors.cpp \
-		FragTrap_function.cpp \
-		FragTrap_constructor.cpp \
-        main.cpp
-		
+       main.cpp
 
 PSRCS = $(addprefix srcs/, $(SRCS))
 
@@ -46,11 +42,11 @@ $(NAME) : $(OBJS)
 
 clean :
 	@rm -rf objs
-	@echo  "$(BLUE)\n  FragTrap CLEANED \n$(NC)"
+	@echo  "$(BLUE)\n  Aaaaand... OPEN! CLEANED \n$(NC)"
 
 fclean : clean
 	@rm -rf $(NAME)
-	@echo  "$(BLUE)\n  FragTrap FULLY CLEANED \n$(NC)"
+	@echo  "$(BLUE)\n  Aaaaand... OPEN! FULLY CLEANED \n$(NC)"
 
 leak :
 	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes ./$(NAME)

@@ -6,43 +6,53 @@
 /*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:59:17 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:22:19 by antoinejour      ###   ########.fr       */
+/*   Updated: 2024/12/06 11:28:47 by antoinejour      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ClapTrap.hpp"
 
 
-ClapTrap::ClapTrap() : 
-    _Name("Unnamed"), _Hit_points(100), _Energy_points(50), _Attack_damage(20){} // Default Constructor
-
-ClapTrap::ClapTrap(std::string Name)
-     :  _Name(Name), _Hit_points(100), _Energy_points(50), _Attack_damage(20) // Constructor with param
+ClapTrap::ClapTrap() 
+    : Name("Unamed"), Hit_points(10), Energy_points(10), Attack_damage(0) // Default Constructor
 {
-    std::cout << "ClapTrap Constructor has been called" << std::endl;
+    std::cout << "Default Constructor has been called" << std::endl;
+}
+
+
+
+ClapTrap::ClapTrap(std::string Name_param)
+     :  Name(Name_param), Hit_points(10), Energy_points(10), Attack_damage(0) // Constructor
+{
+    std::cout << "Constructor has been called" << std::endl;
 } 
+
+
 
 ClapTrap::~ClapTrap() // Destructor
 {
-    std::cout << "ClapTrap Destructor has been called" << std::endl;
+    std::cout << "Destructor has been called" << std::endl;
 } 
 
+
+
 ClapTrap::ClapTrap(const ClapTrap& other)
-     : _Name(other._Name), _Hit_points(other._Hit_points), _Energy_points(other._Energy_points), _Attack_damage(other._Attack_damage) // Copy Constructor
+     : Name(other.Name), Hit_points(other.Hit_points), Energy_points(other.Energy_points), Attack_damage(other.Attack_damage) // Copy Constructor
 {
-    std::cout << "ClapTrap Copy Constructor has been called" << std::endl;
+    std::cout << "Copy Constructor has been called" << std::endl;
 } 
+
+
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other) // Assignation operator overloaded
 {
-    std::cout << "ClapTrap Assignation operator overloaded has been called" << std::endl;
+    std::cout << "Assignation operator overloaded has been called" << std::endl;
     if (this != &other) // self ssignement check
     {
-        this->_Attack_damage = other._Attack_damage;
-        this->_Hit_points = other._Hit_points;
-        this->_Energy_points = other._Energy_points;
-        // Name must not be reassign as it is suppose to be immutable and assigne only once by the constructor
-
+        this->Attack_damage = other.Attack_damage;
+        this->Hit_points = other.Hit_points;
+        this->Energy_points = other.Energy_points;
+        // `Name` is not assigned because it is already initialized in the constructor
     }
     return *this;
 }
