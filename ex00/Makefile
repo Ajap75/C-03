@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+         #
+#    By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 12:53:29 by anastruc          #+#    #+#              #
-#    Updated: 2024/12/04 18:31:30 by antoinejour      ###   ########.fr        #
+#    Updated: 2025/01/17 10:14:29 by anastruc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Aaaaand... OPEN!
+NAME = Aaaaand..Open!
 COMPIL = c++
-FLAGS =  -Wall -Werror -Wextra -std=c++98 -g3 -fPIC
+FLAGS =  -Wall -Werror -Wextra -std=c++98
 
 PINK = \033[1;35m
 BLUE = \033[1;36m
@@ -42,11 +42,11 @@ $(NAME) : $(OBJS)
 
 clean :
 	@rm -rf objs
-	@echo  "$(BLUE)\n  Aaaaand... OPEN! CLEANED \n$(NC)"
+	@echo  "$(BLUE)\n  Aaaaand..Open! \n$(NC)"
 
 fclean : clean
 	@rm -rf $(NAME)
-	@echo  "$(BLUE)\n  Aaaaand... OPEN! FULLY CLEANED \n$(NC)"
+	@echo  "$(BLUE)\n  Aaaaand..Open! \n$(NC)"
 
 leak :
 	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes ./$(NAME)

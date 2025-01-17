@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap_function.cpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 14:04:08 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:29:14 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 13:39:42 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 
 void FragTrap::highFivesGuys(void)
 {
-    std::cout << BLUE << "Hey I want to highFive with you !" << RESET << std::endl;
+    std::cout << BLUE << "High Five !" << RESET << std::endl;
 }

@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:38:29 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:44:14 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 10:48:16 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "string"
 #include "iostream"
+#include <limits.h>
+
 
 #ifndef CLAPTRAP_HPP
 #define CLAPTRAP_HPP

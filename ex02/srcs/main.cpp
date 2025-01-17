@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 18:07:48 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 14:09:14 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 14:44:12 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void FragTrapTest()
     int i;
     i = 0;
     FragTrap BigGirl("BigGirl");
+    FragTrap Tony (BigGirl);
     BigGirl.highFivesGuys();
     BigGirl.takeDamage(99);
     while (i <= 100)

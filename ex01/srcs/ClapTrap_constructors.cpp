@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap_constructors.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:59:17 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:22:19 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 10:52:55 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) // Assignation operator ove
     std::cout << "ClapTrap Assignation operator overloaded has been called" << std::endl;
     if (this != &other) // self ssignement check
     {
+        this->_Name = other._Name;
         this->_Attack_damage = other._Attack_damage;
         this->_Hit_points = other._Hit_points;
         this->_Energy_points = other._Energy_points;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap_constructors.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:59:17 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:28:47 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 09:42:18 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(std::string Name_param)
      :  Name(Name_param), Hit_points(10), Energy_points(10), Attack_damage(0) // Constructor
 {
-    std::cout << "Constructor has been called" << std::endl;
+    std::cout << "Constructor with params has been called" << std::endl;
 } 
 
 
@@ -49,10 +49,10 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) // Assignation operator ove
     std::cout << "Assignation operator overloaded has been called" << std::endl;
     if (this != &other) // self ssignement check
     {
+        this->Name = other.Name;
         this->Attack_damage = other.Attack_damage;
         this->Hit_points = other.Hit_points;
         this->Energy_points = other.Energy_points;
-        // `Name` is not assigned because it is already initialized in the constructor
     }
     return *this;
 }

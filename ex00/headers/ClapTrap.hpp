@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:38:29 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/05 10:57:05 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 11:09:56 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "string"
 #include "iostream"
+#include <limits.h>
 
 #ifndef CLAPTRAP_HPP
 #define CLAPTRAP_HPP
@@ -26,14 +27,14 @@ class ClapTrap
     private :
     
     std::string Name;
-    int Hit_points;
-    int Energy_points;
-    int Attack_damage;
+    unsigned Hit_points;
+    unsigned Energy_points;
+    unsigned Attack_damage;
 
 
     public :
     ClapTrap(); // Default Constructor
-    ClapTrap(std::string Name_param); // constructor 
+    ClapTrap(std::string Name_param); // constructor with param
     ~ClapTrap(); // Destructor
     ClapTrap(const ClapTrap& other); // copy Constructor
     ClapTrap& operator=(const ClapTrap& other); // Assignation operator overloaded 

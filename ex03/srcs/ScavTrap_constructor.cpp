@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap_constructor.cpp                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:36:11 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:33:28 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 15:27:38 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ ScavTrap::~ScavTrap() //Default Destructor
 
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) // copy constructor : Explicitly call ClapTrap copy constructor
 {
-    std::cout << "ScavTrap Copy Constructor has been called" << std::endl;
+    std::cout << "ScavTrap Copy Destructor has been called" << std::endl;
     // if there is any specific attributes to ScavTrap class, I have to add it 
 }; 
 

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap_constructor.cpp                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:36:11 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:13:31 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 13:36:49 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ScavTrap.hpp"
 
-ScavTrap::ScavTrap() // Default Constructor
+ScavTrap::ScavTrap() : ClapTrap()// Default Constructor
 {
     this->_Hit_points = 100; // Overwrite the inherited attribute's value. Attributes inisialized by the ClapTrap Default constructor
     this->_Energy_points = 50; // same
@@ -31,7 +31,7 @@ ScavTrap::ScavTrap(std::string Name)
 
 ScavTrap::~ScavTrap() //Default Destructor
 {
-    std::cout << "ScavTrap Constructor has been called" << std::endl;
+    std::cout << "ScavTrap Destructor has been called" << std::endl;
 }; 
 
 ScavTrap::ScavTrap(const ScavTrap &other)

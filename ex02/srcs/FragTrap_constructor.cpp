@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap_constructor.cpp                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 10:36:11 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 11:34:08 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 15:28:32 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ FragTrap::FragTrap(std::string Name)
     this->_Hit_points = 100; // Overwrite the inherited attribute's value. Attributes inisialized by the ClapTrap Default constructor
     this->_Energy_points = 100; // same
     this->_Attack_damage = 30; // same
-    std::cout << "FragTrap Constructor has been called" << std::endl;
+    std::cout << "FragTrap Constructor with param has been called" << std::endl;
 };
 
 FragTrap::~FragTrap() //Default Destructor
 {
-    std::cout << "FragTrap Constructor has been called" << std::endl;
+    std::cout << "FragTrap Destructor has been called" << std::endl;
 
 }; 
 

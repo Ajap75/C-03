@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap_constructors.cpp                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoinejourdan-astruc <antoinejourdan-a    +#+  +:+       +#+        */
+/*   By: anastruc <anastruc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 15:22:49 by antoinejour       #+#    #+#             */
-/*   Updated: 2024/12/06 10:59:35 by antoinejour      ###   ########.fr       */
+/*   Updated: 2025/01/17 15:12:41 by anastruc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap()  // Default constructor;
+DiamondTrap::DiamondTrap() // Default constructor;
 {
     std::cout << "DiamondTrap default constructor called" << std::endl;
-    _Hit_points = 100;
-    _Energy_points = 50;
-    _Attack_damage = 30;
+    _Hit_points = FragTrap::_Hit_points;
+    _Energy_points = ScavTrap::_Energy_points;
+    _Attack_damage = FragTrap::_Attack_damage;
 };
 
 
@@ -35,9 +35,9 @@ DiamondTrap::DiamondTrap(std::string Diamondname) // constructor;
      : ClapTrap(Diamondname + "_clap_name"), _Name(Diamondname) 
 {
     std::cout << "DiamondTrap default constructor called" << std::endl;
-    _Hit_points = 100;
-    _Energy_points = 50;
-    _Attack_damage = 30;
+    _Hit_points = FragTrap::_Hit_points;
+    _Energy_points = ScavTrap::_Energy_points;
+    _Attack_damage = FragTrap::_Attack_damage;
 };
 
 
@@ -54,7 +54,10 @@ The name attribute belongs to DiamondTrap and must be explicitly copied.*/
 /*These are inherited from ClapTrap and can be directly assigned since they are accessible in the derived class.*/
 }
 
-DiamondTrap::~DiamondTrap() {} // Destructor;
+DiamondTrap::~DiamondTrap() 
+{
+    std::cout << "DiamondTrap destructor called" << std::endl;
+} // Destructor;
 
 DiamondTrap& DiamondTrap::operator =(const DiamondTrap& other)
 {
